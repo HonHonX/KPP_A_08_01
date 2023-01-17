@@ -49,7 +49,7 @@ int main () {
 		
 		printf("\n%s",ausgabe);
 		
-		ausgabe[0]='\0'; //array wird geleert
+		//ausgabe[0]='\0'; //array wird geleert
 	}		
 	
 	//Ende
