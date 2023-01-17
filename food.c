@@ -27,19 +27,29 @@ int main () {
 		float brutto = netto*1.07;
 		printf("\nProdukt[%d]: %s | %dg pro Einheit | %.2f€/kg(netto) | %.2f€/kg(brutto)",i+1,name[i],packungsgroesse[i],netto,brutto);
 		
+		//Alternative Ausgabe über einen Ausgabe-String
 		char ausgabe[100];
+		
 		strcat(ausgabe,name[i]);
+		strcpy(ausgabe,",");
+		
 		char pg[10];
-		sprintf(pg, "%d", packungsgroesse[i]);			
+		sprintf(pg, "%d", packungsgroesse[i]); //int muss in einen String umgewandelt werden			
 		strcat(ausgabe,pg);
+		strcpy(ausgabe,",");
+		
 		char n[10];
 		char b[10];
-		sprintf(n, "%.2f", netto);
-		sprintf(b, "%.2f", brutto);
+		sprintf(n, "%.2f", netto); //float muss in einen String umgewandelt werden
+		sprintf(b, "%.2f", brutto); //float muss in einen String umgewandelt werden
 		strcat(ausgabe,n);
+		strcpy(ausgabe,",");
 		strcat(ausgabe,b);
+		strcpy(ausgabe,",");
+		
 		printf("\n%s",ausgabe);
-		array(ausgabe);
+		
+		array(ausgabe); //array wird geleert
 	}		
 	
 	//Ende
