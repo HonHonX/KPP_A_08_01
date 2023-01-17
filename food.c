@@ -25,11 +25,7 @@ int main () {
 	for (int i=0; i<5; i++) {
 		float netto = preis[i]/packungsgroesse[i]*1000;
 		float brutto = netto*1.07;
-		printf("\nProdukt[%d]: %s | %dg pro Einheit | %.2f€/kg(netto) | %.2f€/kg(brutto)",i+1,name[i],packungsgroesse[i],netto,brutto);
-
-		
-		
-		
+		printf("\nProdukt[%d]: %s | %dg pro Einheit | %.2f€/kg(netto) | %.2f€/kg(brutto)",i+1,name[i],packungsgroesse[i],netto,brutto);	
 		
 		//ALTERNATIVE: Ausgabe über einen Ausgabe-String
 		char ausgabe[100];
@@ -46,6 +42,7 @@ int main () {
 		*	sendet einen formatierten Output zu einem String(str) auf den gezeigt wird.
 		*	Hier wird z.B. die Packungsgröße,ein int Wert passend formatiert, 
 		*	damit dieser an den Ausgabe-String angehangen werden kann.
+		*	Siehe: https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm
 		*/
 		strcat(ausgabe,pg);
 		strcat(ausgabe,"g,");
