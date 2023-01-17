@@ -18,13 +18,13 @@ int main () {
 	//Wareneingabe
 	char* name[6] = { "Wasser" , "Kimchi" , "Gochujang" , "Miso" , "Yopokki" , '\0' };
 	int packungsgroesse[6] = { 750 , 160 , 200 , 153 , 115 , '\0' }; //in Gramm
-	float preis[6] = { 0.66 , 2.59 , 2.49 , 4.59 , 299 , '\0' }; //in Euro
+	float preis[6] = { 0.66 , 2.59 , 2.49 , 4.59 , 2.99 , '\0' }; //in Euro
 	
 	//Ziel ist, eine Liste mit folgenden Werten auszugeben: Name, Packungsgröße, Kilopreis netto in Euro, Kilopreis brutto in Euro(7% Mwst.)
 	for (int i=0; i<5; i++) {
 		float netto = preis[i]/packungsgroesse[i]*1000;
 		float brutto = netto*1.07;
-		printf("\nProdukt[%d]:%s | %dg pro Einheit | %.2f€/kg(netto) | %.2f€/kg(brutto)",i+1,name[i],packungsgroesse[i],netto,brutto);
+		printf("\nProdukt[%d]: %s | %dg pro Einheit | %.2f€/kg(netto) | %.2f€/kg(brutto)",i+1,name[i],packungsgroesse[i],netto,brutto);
 	}		
 	
 	//Ende
