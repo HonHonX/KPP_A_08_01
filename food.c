@@ -28,10 +28,10 @@ int main () {
 		printf("\nProdukt[%d]: %s | %dg pro Einheit | %.2f€/kg(netto) | %.2f€/kg(brutto)",i+1,name[i],packungsgroesse[i],netto,brutto);
 		
 		char ausgabe[5];
-		strcat(ausgabe,name);
-		strcat(ausgabe,packungsgroesse);
+		strcat(ausgabe,name[i]);
+		strcat(ausgabe,packungsgroesse[i]);
 		char n[10];
-		char b[10]
+		char b[10];
 		sprintf(n, "%f", netto);
 		sprintf(b, "%f", brutto);
 		strcat(ausgabe,n);
