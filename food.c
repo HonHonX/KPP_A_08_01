@@ -39,6 +39,7 @@ int main () {
 		strcat(ausgabe,n);
 		strcat(ausgabe,b);
 		printf("\n%s",ausgabe);
+		array(ausgabe);
 	}		
 	
 	//Ende
