@@ -30,8 +30,8 @@ int main () {
 		char ausgabe[5];
 		strcpy(ausgabe,name);
 		strcat(ausgabe,packungsgroesse);
-		char n[];
-		char b[]
+		char n[1];
+		char b[1]
 		sprintf(n, "%f", netto);
 		sprintf(b, "%f", brutto);
 		strcat(ausgabe,n);
