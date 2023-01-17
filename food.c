@@ -40,24 +40,33 @@ int main () {
 		
 		//Packungsgröße wird angehängt
 		char pg[10];
-		sprintf(pg, "%d", packungsgroesse[i]); //int muss in einen String umgewandelt werden			
+		sprintf(pg, "%d", packungsgroesse[i]);	
+		/*
+		*	Die Funktion sprintf(*Str, Formatierung, zu umwandelnder Wert) 
+		*	sendet einen formatierten Output zu einem String(str) auf den gezeigt wird.
+		*	Hier wird z.B. die Packungsgröße,ein int Wert passend formatiert, 
+		*	damit dieser an den Ausgabe-String angehangen werden kann.
+		*/
 		strcat(ausgabe,pg);
 		strcat(ausgabe,"g,");
 		
-		
+		//Netto-Preis wird angehängt
 		char n[10];
-		sprintf(pg, "%.2f", netto); //float muss in einen String umgewandelt werden
-		
+		sprintf(n, "%.2f", netto); //float muss in einen String umgewandelt werden
 		strcat(ausgabe,n);
 		strcat(ausgabe,"€/kg(netto),");
+		
+		//Brutto-Preis wird angehängt
 		char b[10];
-		sprintf(pg, "%.2f", brutto); //float muss in einen String umgewandelt werden
+		sprintf(b, "%.2f", brutto); //float muss in einen String umgewandelt werden
 		strcat(ausgabe,b);
 		strcat(ausgabe,"€/kg(brutto)");
 		
+		//Ausgabe des Strings
 		printf("\n%s",ausgabe);
 		
-		ausgabe[0]='\0'; //array wird geleert
+		//Array wird geleert
+		ausgabe[0]='\0'; 
 	}		
 	
 	//Ende
