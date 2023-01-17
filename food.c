@@ -34,8 +34,8 @@ int main () {
 		strcat(ausgabe,pg);
 		char n[10];
 		char b[10];
-		sprintf(n, "%f", netto);
-		sprintf(b, "%f", brutto);
+		sprintf(n, "%.2f", netto);
+		sprintf(b, "%.2f", brutto);
 		strcat(ausgabe,n);
 		strcat(ausgabe,b);
 		printf("\n%s",ausgabe);
