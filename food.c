@@ -34,8 +34,9 @@ int main () {
 		strcat(ausgabe,",");
 		
 		char pg[10];
-		sprintf(pg, "%d", packungsgroesse[i]); //int muss in einen String umgewandelt werden			
-		strcat(ausgabe,pg);
+		//sprintf(pg, "%d", packungsgroesse[i]); //int muss in einen String umgewandelt werden			
+		//strcat(ausgabe,pg);
+		strcat(ausgabe,sprintf(pg, "%d", packungsgroesse[i]));
 		strcat(ausgabe,"g,");
 		
 		char n[10];
