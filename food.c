@@ -29,7 +29,9 @@ int main () {
 		
 		char ausgabe[5];
 		strcat(ausgabe,name[i]);
-		strcat(ausgabe,packungsgroesse[i]);
+		char pg[10];
+		sprintf(pg, "%d", packungsgroesse[i]);			
+		strcat(ausgabe,pg);
 		char n[10];
 		char b[10];
 		sprintf(n, "%f", netto);
