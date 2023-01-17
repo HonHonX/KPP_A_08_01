@@ -31,25 +31,25 @@ int main () {
 		char ausgabe[100];
 		
 		strcat(ausgabe,name[i]);
-		strcpy(ausgabe,",");
+		strcat(ausgabe,",");
 		
 		char pg[10];
 		sprintf(pg, "%d", packungsgroesse[i]); //int muss in einen String umgewandelt werden			
 		strcat(ausgabe,pg);
-		strcpy(ausgabe,",");
+		strcat(ausgabe,",");
 		
 		char n[10];
 		char b[10];
 		sprintf(n, "%.2f", netto); //float muss in einen String umgewandelt werden
 		sprintf(b, "%.2f", brutto); //float muss in einen String umgewandelt werden
 		strcat(ausgabe,n);
-		strcpy(ausgabe,",");
+		strcat(ausgabe,",");
 		strcat(ausgabe,b);
-		strcpy(ausgabe,",");
+		strcat(ausgabe,",");
 		
 		printf("\n%s",ausgabe);
 		
-		//ausgabe[0]='\0'; //array wird geleert
+		strcpy(ausgabe,""); //array wird geleert
 	}		
 	
 	//Ende
