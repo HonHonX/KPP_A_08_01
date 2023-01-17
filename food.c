@@ -28,7 +28,7 @@ int main () {
 		printf("\nProdukt[%d]: %s | %dg pro Einheit | %.2f€/kg(netto) | %.2f€/kg(brutto)",i+1,name[i],packungsgroesse[i],netto,brutto);
 		
 		char ausgabe[5];
-		strcpy(ausgabe,name);
+		strcat(ausgabe,name);
 		strcat(ausgabe,packungsgroesse);
 		char n[10];
 		char b[10]
