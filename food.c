@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 //Funktions Prototypen
 
@@ -29,8 +30,9 @@ int main () {
 		char* ausgabe[];
 		strcpy(ausgabe,name);
 		strcat(ausgabe,packungsgroesse);
-		char* n[] = netto;
-		char* b[] = brutto;
+		char* n[], b[];
+		sprintf(n, "%f", netto);
+		sprintf(b, "%f", brutto);
 		strcat(ausgabe,n);
 		strcat(ausgabe,b);
 		printf("\n%s",ausgabe);
