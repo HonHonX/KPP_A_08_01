@@ -22,9 +22,9 @@ int main () {
 	
 	//Ziel ist, eine Liste mit folgenden Werten auszugeben: Name, Packungsgröße, Kilopreis netto in Euro, Kilopreis brutto in Euro(7% Mwst.)
 	for (int i=0; i<5; i++) {
-		char* netto = preis[i]/packungsgroesse[i]*1000;
-		char* brutto = netto*1.07;
-		printf("\nProdukt[&d]:%s | %dg pro Einheit | %s€/kg(netto) | %s€/kg(brutto)",i,name[i],packungsgroesse[i],netto,brutto);
+		float netto = preis[i]/packungsgroesse[i]*1000;
+		float brutto = netto*1.07;
+		printf("\nProdukt[&d]:%s | %dg pro Einheit | %f€/kg(netto) | %f€/kg(brutto)",i,name[i],packungsgroesse[i],netto,brutto);
 	}		
 	
 	//Ende
