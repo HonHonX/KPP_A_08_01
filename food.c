@@ -36,16 +36,16 @@ int main () {
 		char pg[10];
 		sprintf(pg, "%d", packungsgroesse[i]); //int muss in einen String umgewandelt werden			
 		strcat(ausgabe,pg);
-		strcat(ausgabe,",");
+		strcat(ausgabe,"g,");
 		
 		char n[10];
 		char b[10];
 		sprintf(n, "%.2f", netto); //float muss in einen String umgewandelt werden
 		sprintf(b, "%.2f", brutto); //float muss in einen String umgewandelt werden
 		strcat(ausgabe,n);
-		strcat(ausgabe,",");
+		strcat(ausgabe,"€/kg(netto),");
 		strcat(ausgabe,b);
-		strcat(ausgabe,",");
+		strcat(ausgabe,"€/kg(brutto)");
 		
 		printf("\n%s",ausgabe);
 		
