@@ -17,7 +17,7 @@ int main () {
 	printf("\n *************************************** \n\n");
 	
 	//Wareneingabe
-	char name[6] = { "Wasser" , "Kimchi" , "Gochujang" , "Miso" , "Yopokki" , '\0' };
+	char* name[6] = { "Wasser" , "Kimchi" , "Gochujang" , "Miso" , "Yopokki" , '\0' };
 	int packungsgroesse[6] = { 750 , 160 , 200 , 153 , 115 , '\0' }; //in Gramm
 	float preis[6] = { 0.66 , 2.59 , 2.49 , 4.59 , 2.99 , '\0' }; //in Euro
 	
